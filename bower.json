@@ -1,0 +1,21 @@
+{
+  "name": "santer",
+  "homepage": "https://github.com/dsgoncalves85/santer",
+  "authors": [
+    "Daniel Goncalves <dsgoncalves@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
