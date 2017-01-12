@@ -1,0 +1,23 @@
+{
+  "name": "santer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dsgoncalves85@github.com/dsgoncalves85/santer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsgoncalves85/santer/issues"
+  },
+  "homepage": "https://github.com/dsgoncalves85/santer#readme"
+}
