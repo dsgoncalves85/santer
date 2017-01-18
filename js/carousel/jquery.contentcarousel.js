@@ -48,7 +48,7 @@
 			openItem	: function( $wrapper, $item, opts, cache ) {
 				cache.idxClicked	= $item.index();
 				// the item's position (1, 2, or 3) on the viewport (the visible items) 
-				cache.winpos		= aux.getWinPos( $item.position().left, cache );
+				cache.winpos		= aux.getWinPos( Math.round($item.position().left), cache );
 				$wrapper.find('div.ca-item').not( $item ).hide();
 				$item.find('div.ca-content-wrapper').css( 'left', cache.itemW + 'px' ).stop().animate({
 					width	: cache.itemW * 2 + 'px',
