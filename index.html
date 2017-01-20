@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/page/home/carousel/carousel.css" />
 	<link rel="stylesheet" type="text/css" href="css/page/home/carousel/jquery.jscrollpane.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="css/page/home/team-presentation/component.css" />
+	<link rel="stylesheet" type="text/css" href="bower_components/video.js/dist/video-js.min.css">
 </head>
 <body>
 	<header>
@@ -201,7 +202,6 @@
 					<ul>
 						<li><a href="#" class="href"><img src="../images/page/home/main/sponsorship/actio-rio-logo.png" alt="Action Logo"></a></li>
 						<li><a href="#" class="href"><img src="../images/page/home/main/sponsorship/actio-rio-logo.png" alt=""></a></li>
-						<li><a href="#" class="href"><img src="../images/page/home/main/sponsorship/actio-rio-logo.png" alt=""></a></li>
 					</ul>
 				</div>
 			</div>
@@ -226,7 +226,6 @@
 				<div class="sponsors-container">
 					<ul>
 						<li><a href="#" class="href"><img src="../images/page/home/main/sponsorship/actio-rio-logo.png" alt="Action Logo"></a></li>
-						<li><a href="#" class="href"><img src="../images/page/home/main/sponsorship/actio-rio-logo.png" alt=""></a></li>
 						<li><a href="#" class="href"><img src="../images/page/home/main/sponsorship/actio-rio-logo.png" alt=""></a></li>
 					</ul>
 				</div>
@@ -667,7 +666,23 @@
 			
 		</div>
 		<div class="video-presentation">
-			
+
+			<video id="santer-video" class="video-js vjs-default-skin fc-video-dimensions vjs-has-started vjs-playing vjs-user-inactive" width="1690" height="950"
+				poster="" data-setup='{ "controls": true, "autoplay": true, "preload": "auto", "controlBar": { "muteToggle": true} }'>
+				<source src="images/page/home/main/video-presentation/santerrugby.mp4" type="video/mp4" />
+				<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+			</video>
+			<div class="top-right-stripe">
+				
+			</div>
+			<div class="video-logo">
+				<a href="#">
+					<img src="images/page/home/main/video-presentation/video-mascote.png" alt="Logo Image"/>
+				</a>
+			</div>
+			<div class="bottom-left-stripe">
+				
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -698,12 +713,13 @@
 	<script type="text/javascript" src="../js/team-presentation/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="../js/team-presentation/classie.js"></script>
 	<script type="text/javascript" src="../js/team-presentation/cbpGridGallery.js"></script>
+	<script type="text/javascript" src="../bower_components/video.js/dist/video.min.js"></script>
 	<script type="text/javascript">
 		new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 
 		$('#ca-container').contentcarousel();
 
-		
+		videojs.options.flash.swf = "../bower_components/video.js/dist/video-js.swf"
 	</script>
 </body>
 </html>

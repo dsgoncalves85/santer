@@ -1,0 +1,66 @@
+.video-presentation
+		position: relative
+        width: 100%
+		top: 0
+		left: 0
+		overflow: hidden
+		border-top: 1px solid $yellow
+		border-bottom: 3px solid $yellow
+
+		.video-logo
+			position: absolute
+			top: 5%
+			right: 3%
+
+			img
+				max-width: 150px
+				max-height: 150px
+
+		.top-right-stripe
+			min-width: 287px
+			min-height: 425px
+			background: 
+				image: url(/images/page/home/main/video-presentation/top-right-stripe.png)
+				repeat: no-repeat 
+				size: cover
+				position: center
+			position: absolute
+			right: 0
+			top: 0
+
+		.bottom-left-stripe
+			min-width: 400px
+			min-height: 625px
+			background: 
+				image: url(/images/page/home/main/video-presentation/bottom-left-stripe.png)
+				repeat: no-repeat 
+				size: cover
+				position: center
+			position: absolute
+			left: 0
+			bottom: 0
+
+		.vjs-control-bar
+			z-index: 1!important
+
+		@media (max-width: $mobile)
+			.santer-video-dimensions
+				max-width: 440px!important	
+				max-height: 270px!important
+
+			.video-logo
+				img
+					max-width: 50px!important
+					max-height: 50px!important
+			
+			.top-right-stripe
+				min-width: 120px!important
+				min-height: 175px!important
+
+			.bottom-left-stripe
+				min-width: 140px!important
+				min-height: 205px!important
+
+
+
+	    
