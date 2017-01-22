@@ -7,13 +7,10 @@
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/home.css">
 	<!--Carousel First Slider CSS-->
-	<link rel="stylesheet" type="text/css" href="css/page/home/carousel/carousel.css" />
-	<link rel="stylesheet" type="text/css" href="css/page/home/carousel/jquery.jscrollpane.css" media="all" />
+	<link rel="stylesheet" type="text/css"  href="css/page/home/slider-top/sequence-theme.pop-slide.css" media="all">
 	<link rel="stylesheet" type="text/css" href="css/page/home/team-presentation/component.css" />
 	<link rel="stylesheet" type="text/css" href="bower_components/video.js/dist/video-js.min.css">
 	<link rel="stylesheet" type="text/css" href="css/page/home/team-info/full-tabs.css" />
-	<link rel="stylesheet" type="text/css" href="bower_components/glidejs/dist/css/glide.core.css">
-    <link rel="stylesheet" type="text/css" href="bower_components/glidejs/dist/css/glide.theme.css">
 </head>
 <body>
 	<header>
@@ -40,30 +37,67 @@
 		</div>
 	</header>
 	<main>
-		<div class="slider-top">
-			<div id="Glide" class="glide">
-				<div class="logo">
-					<a href="index.html">
-						<img src="images/page/home/main/slider-top/logo-top-home.png" alt="Logo Santer Top">
-					</a>
-				</div>
-			    <div class="glide__arrows">
-			        <button class="glide__arrow prev" data-glide-dir="<">Anterior</button>
-			        <button class="glide__arrow next" data-glide-dir=">">Próxima</button>
-			    </div>
+		
+		 <div id="sequence" class="seq">
+		    <div class="seq-screen">
+		      <ul class="seq-canvas">
 
-			    <div class="glide__wrapper">
-			        <ul class="glide__track">
-			            <li class="glide__slide"><img src="images/page/home/main/slider-top/top-home-img.svg" alt="Slide 1 Image"></a></li>
-			            <li class="glide__slide"><img src="images/page/home/main/slider-top/image-2.jpg" alt="Slide 2 Image"></a></li>
-			            <li class="glide__slide"><img src="images/page/home/main/slider-top/image-4.jpg" alt="Slide 3 Image"></a></li>
-			        </ul>
-			    </div>
+		        <li class="seq-step1 seq-in">
+		          <div data-seq class="seq-title">
+		            <h2>Um esporte impactante...</h2>
+		            <a class="seq-button" href="#aboutus">mais ></a>
+		          </div>
 
-			    <div class="glide__bullets"></div>
-			</div>
+		          <!--small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5709923096">Kmeron</a></small-->
+		        </li>
+
+		        <li class="seq-step2">
+		          <div data-seq class="seq-title">
+		            <h2>Como você nunca viu...</h2>
+		            <a class="seq-button" href="#aboutus">mais ></a>
+		          </div>
+
+		          <!--small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5709923096">Kmeron</a></small-->
+		        </li>
+
+		        <li class="seq-step3">
+		          <div data-seq class="seq-title">
+		            <h2>Você está preparado para entrar nesse mundo?</h2>
+		            <a class="seq-button" href="#aboutus">mais ></a>
+		          </div>
+
+		          <!--small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5709923096">Kmeron</a></small-->
+		        </li>
+
+		        <li class="seq-step4">
+		          <div data-seq class="seq-title">
+		            <h2>Então venha para o mundo rugby!</h2>
+		            <a class="seq-button" href="#aboutus">mais ></a>
+		          </div>
+
+		          <!--small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5709923096">Kmeron</a></small-->
+		        </li>
+
+		        <li class="seq-step5">
+		          <div data-seq class="seq-title">
+		            <h2>Venha para a família Santer Rio Rugby</h2>
+		            <a class="seq-button" href="#aboutus">mais ></a>
+		          </div>
+
+		          <!--small>Photo by <a href="https://www.flickr.com/photos/frf_kmeron/5709923096">Kmeron</a></small-->
+		        </li>
+		      </ul>
+		    </div>
+
+		    <ul role="navigation" aria-label="Pagination" class="seq-pagination">
+		      <li><a href="#step1" rel="step1" title="Go to slide 1">1</a></li>
+		      <li><a href="#step2" rel="step2" title="Go to slide 2">2</a></li>
+		      <li><a href="#step3" rel="step3" title="Go to slide 3">3</a></li>
+		      <li><a href="#step4" rel="step4" title="Go to slide 4">4</a></li>
+		      <li><a href="#step5" rel="step5" title="Go to slide 5">5</a></li>
+		    </ul>
 		</div>
-		<div class="aboutus">
+		<div id="aboutus" class="aboutus">
 			<div class="main-social">
 				<ul>
 					<li><a href="#"><img src="images/page/home/main/aboutus-insta-icon.png" alt="Instagram icon"></a></li>
@@ -739,11 +773,11 @@
 	</footer>
 	<!--script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script-->
 	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="../bower_components/glidejs/dist/glide.min.js"></script>
+    <script type="text/javascript" src="../js/slider-top/imagesloaded.pkgd.min.js"></script>
+	<script type="text/javascript" src="../js/slider-top/hammer.min.js"></script>
+	<script type="text/javascript" src="../js/slider-top/sequence.min.js"></script>
+	<script type="text/javascript" src="../js/slider-top/sequence-theme.pop-slide.js"></script>
 	<script type="text/javascript" src="../js/team-presentation/modernizr.custom.js"></script>
-	<script type="text/javascript" src="../js/carousel/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="../js/carousel/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="../js/carousel/jquery.contentcarousel.js"></script>
 	<script type="text/javascript" src="../js/team-presentation/imagesloaded.pkgd.min.js"></script>
 	<script type="text/javascript" src="../js/team-presentation/masonry.pkgd.min.js"></script>
 	<script type="text/javascript" src="../js/team-presentation/classie.js"></script>
@@ -751,9 +785,18 @@
 	<script type="text/javascript" src="../js/team-info/cbpFWTabs.js"></script>
 	<script type="text/javascript" src="../bower_components/video.js/dist/video.min.js"></script>
 	<script type="text/javascript">
-		$("#Glide").glide({
-	        type: "slideshow"
-	    });
+		 // Get the Sequence element
+		  var sequenceElement = document.getElementById("sequence");
+
+		  var options = {
+		    // Place your Sequence options here to override defaults
+		    // See: http://sequencejs.com/documentation/#options
+		    keyNavigation: true,
+		    fadeStepWhenSkipped: false
+		  }
+
+		  // Launch Sequence on the element, and with the options we specified above
+		  var mySequence = sequence(sequenceElement, options);
 
 		new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 		new CBPFWTabs( document.getElementById( 'tabs' ) );

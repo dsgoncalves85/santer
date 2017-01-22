@@ -18,10 +18,9 @@
 		text-align: center
 		background:
 			color: $black
-
 		h1
 			color: $white
-			font-size: 60px	
+			font-size: 60px
 	
 	.main-text-container
 		width: 100%
@@ -32,6 +31,25 @@
 			height: 200px
 			width: 450px
 			font-size: 18px
+
+	@media (max-width: $mobile)
+		.main-title
+			padding-top: 15px
+			height: 80px
+			h1
+				font-size: 40px
+
+		.main-text-container
+			.main-text
+				padding-top: 30px
+				height: 150px
+				width: 270px
+				font-size: 16px
+
+		.main-social
+			text-align: center
+
+	
 
 	.aboutus-container
 		width: 80%
@@ -51,18 +69,39 @@
 				display: inline-block
 				margin: 0 25px 0 25px
 
-			@media (max-width: $mobile)
-				.box-pics
-					width: 100%
-
 			h1
 				font-size: 30px
 				margin-top: 10px
 
+		@media (max-width: $mobile)
+			.main-pics
+				img
+					width: 150px
+					height: 150px
+
+				.box-pics
+					width: 100%
+					height: 200px
+					float: left
+					display: inline-block
+					margin: 20px 0 0 0		
+
+				h1
+					font-size: 20px
+					margin-top: 10px
+
+		@media (min-width: $mobile) and (max-width: $tablet)
+			.main-pics
+				.box-pics
+					width: 40%
+					float: left
+					display: inline-block
+					margin: 0 25px 0 25px
+
 	.more-about
 		padding-top: 10px
 		position: relative
-		min-height: 135px
+		min-height: 145px
 
 		.button-moreabout
 			position: absolute
@@ -81,4 +120,28 @@
 				display: inline-block
 				color: $white
 				padding-left: 20px
+
+	@media (max-width: $mobile)
+		.more-about
+			padding-top: 10px
+			position: relative
+			min-height: 95px
+
+			.button-moreabout
+				position: absolute
+				right: 0
+				bottom: 0
+				font-size: 20px
+				padding: 12px 0 12px 0
+				text-align: center
+				margin-top: 30px
+				width: 170px
+				height: 40px
+				background:
+					color: $black
+
+				p,i
+					display: inline-block
+					color: $white
+					padding-left: 20px
 
