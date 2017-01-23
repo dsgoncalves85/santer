@@ -27,8 +27,8 @@ body,
 html,
 .seq {
   /* Uncomment to make the theme full-screen */
-  /* height: 100% !important; */
-  /* max-height: 100% !important; */
+  height: 100% !important;
+  max-height: 100% !important;
 }
 
 .seq {
@@ -43,6 +43,7 @@ html,
   margin: 0 auto;
   padding: 0;
   font-family: 'Play', sans-serif !important;
+  z-index: -1;
 }
 
 .seq.seq-active .seq-preloader {
