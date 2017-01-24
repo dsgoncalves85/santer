@@ -26,9 +26,9 @@
 body,
 html,
 .seq {
-  /* Uncomment to make the theme full-screen */
+  /* Uncomment to make the theme full-screen 
   height: 100% !important;
-  max-height: 100% !important;
+  max-height: 100% !important;*/
 }
 
 .seq {
@@ -36,14 +36,14 @@ html,
   /* Dimensions */
   height: 360px;
   width: 100%;
-  max-width: 1700px;
+  max-width: 2100px;
   /* Hide anything that goes beyond the boundaries of the Sequence container */
   overflow: hidden;
   /* Center the Sequence container on the page */
   margin: 0 auto;
   padding: 0;
   font-family: 'Play', sans-serif !important;
-  z-index: -1;
+  z-index: 1;
 }
 
 .seq.seq-active .seq-preloader {
@@ -147,22 +147,27 @@ html,
 
 .seq .seq-step1 {
   background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-repeat: no-repeat;
 }
 
 .seq .seq-step2 {
   background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-repeat: no-repeat;
 }
 
 .seq .seq-step3 {
   background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-repeat: no-repeat;
 }
 
 .seq .seq-step4 {
   background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-repeat: no-repeat;
 }
 
 .seq .seq-step5 {
   background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-repeat: no-repeat;
 }
 
 .seq small {

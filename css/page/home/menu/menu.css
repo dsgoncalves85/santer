@@ -49,6 +49,8 @@
 	background: #FFE918;
 	width: 100%;
 	left: 0;
+	/* Para colocar o menu sobre o slide*/
+	z-index: 15	;
 }
 
 .cbp-hropen .cbp-hrsub {

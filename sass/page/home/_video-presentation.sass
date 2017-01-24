@@ -45,13 +45,31 @@
 
 		@media (max-width: $mobile)
 			.santer-video-dimensions
-				max-width: 440px!important	
-				max-height: 270px!important
+				max-width: 480px!important	
+				max-height: 250px!important
 
 			.video-logo
 				img
 					max-width: 50px!important
 					max-height: 50px!important
+			
+			.top-right-stripe
+				min-width: 120px!important
+				min-height: 175px!important
+
+			.bottom-left-stripe
+				min-width: 140px!important
+				min-height: 205px!important
+
+		@media (min-width: $mobile) and (max-width: $tablet)
+			.santer-video-dimensions
+				max-width: 900px!important	
+				max-height: 500px!important
+
+			.video-logo
+				img
+					max-width: 100px!important
+					max-height: 100px!important
 			
 			.top-right-stripe
 				min-width: 120px!important
