@@ -8,9 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="css/page/home/menu/menu.css">
 	<link rel="stylesheet" type="text/css" href="css/page/home/slider-top/sequence-theme.pop-slide.css" media="all">
-	<link rel="stylesheet" type="text/css" href="css/page/home/team-presentation/component.css" />
-	<link rel="stylesheet" type="text/css" href="bower_components/video.js/dist/video-js.min.css">
 	<link rel="stylesheet" type="text/css" href="css/page/home/team-info/full-tabs.css" />
+	<link rel="stylesheet" type="text/css" href="css/page/home/team-presentation/component.css" />
+	<link rel="stylesheet" type="text/css" href="css/page/home/rugby-info/rugby-info.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/video.js/dist/video-js.min.css">
+	
 </head>
 <body>
 	<header>
@@ -206,10 +208,6 @@
 					<p>Saiba mais</p><i class="fa fa-chevron-down" aria-hidden="true"></i>		
 				</div>
 			</div>
-		</div>
-		<div class="first-slider">
-			
-		
 		</div>
 		<div class="team-info">
 			<div id="tabs" class="tabs">
@@ -792,7 +790,52 @@
 			</div>
 			
 		</div>
-		
+		<div class="rugby-info">
+			<ul class="cbp-ig-grid">
+				<li>
+					<a href="#">
+						<span class="cbp-ig-icon cbp-ig-icon-shoe"></span>
+						<h3 class="cbp-ig-title">História</h3>
+						<span class="cbp-ig-category">Surpreendente</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="cbp-ig-icon cbp-ig-icon-ribbon"></span>
+						<h3 class="cbp-ig-title">Regras</h3>
+						<span class="cbp-ig-category">Cuidado</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="cbp-ig-icon cbp-ig-icon-armor"></span>
+						<h3 class="cbp-ig-title">Equipamento</h3>
+						<span class="cbp-ig-category">Arma/Armadura</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="cbp-ig-icon cbp-ig-icon-whippy"></span>
+						<h3 class="cbp-ig-title">Quadra</h3>
+						<span class="cbp-ig-category">Campo de Batalha</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="cbp-ig-icon cbp-ig-icon-spectacles"></span>
+						<h3 class="cbp-ig-title">Rugby no Mundo</h3>
+						<span class="cbp-ig-category">Dominação</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="cbp-ig-icon cbp-ig-icon-doumbek"></span>
+						<h3 class="cbp-ig-title">Ranking</h3>
+						<span class="cbp-ig-category">Objetivo</span>
+					</a>
+				</li>
+			</ul>
+		</div>
 		<div class="contactus">
 			
 		</div>
@@ -848,6 +891,7 @@
 	<script type="text/javascript" src="../js/team-presentation/classie.js"></script>
 	<script type="text/javascript" src="../js/team-presentation/cbpGridGallery.js"></script>
 	<script type="text/javascript" src="../js/team-info/cbpFWTabs.js"></script>
+	<script type="text/javascript" src="../js/rugby-info/modernizr.custom.js"></script>
 	<script type="text/javascript" src="../bower_components/video.js/dist/video.min.js"></script>
 	<script type="text/javascript">
 		cbpHorizontalMenu.init();
@@ -867,8 +911,6 @@
 
 		new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
 		new CBPFWTabs( document.getElementById( 'tabs' ) );
-
-		//$('#ca-container').contentcarousel();
 
 		videojs.options.flash.swf = "../bower_components/video.js/dist/video-js.swf"
 	</script>
