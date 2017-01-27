@@ -1,12 +1,59 @@
+@charset "UTF-8";
+
 @font-face {
-	font-family: 'anyoldicon';
-	src:url('../../../../fonts/anyoldicon/anyoldicon.eot');
-	src:url('../../../../fonts/anyoldicon/anyoldicon.eot?#iefix') format('embedded-opentype'),
-		url('../../../../fonts/anyoldicon/anyoldicon.woff') format('woff'),
-		url('../../../../fonts/anyoldicon/anyoldicon.ttf') format('truetype'),
-		url('../../../../fonts/anyoldicon/anyoldicon.svg#anyoldicon') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "santer-font";
+  src:url("../../../../fonts/icomoon/santer-font.eot");
+  src:url("../../../../fonts/icomoon/santer-font.eot?#iefix") format("embedded-opentype"),
+    url("../../../../fonts/icomoon/santer-font.woff") format("woff"),
+    url("../../../../fonts/icomoon/santer-font.ttf") format("truetype"),
+    url("../../../../fonts/icomoon/santer-font.svg#santer-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "santer-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "santer-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.rugby-equipment-icon:before {
+  content: "\61";
+}
+.rugby-field-icon:before {
+  content: "\62";
+}
+.rugby-rules-icon:before {
+  content: "\63";
+}
+.rugby-ranking-icon:before {
+  content: "\64";
+}
+
+.rugby-ranking-black-icon:before {
+  content: "\65";
 }
 
 /* General grid styles */
@@ -66,7 +113,7 @@
 }
 
 .cbp-ig-icon:before {
-	font-family: 'anyoldicon';
+	font-family: 'santer-font';
 	font-size: 14em;
 	speak: none;
 	font-style: normal;
@@ -81,8 +128,8 @@
 	content: "\e000";
 }
 
-.cbp-ig-icon-ribbon:before {
-	content: "\e001";
+.cbp-ig-icon-rules:before {
+	content: "\e900";
 }
 
 .cbp-ig-icon-armor:before {
