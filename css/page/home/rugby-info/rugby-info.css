@@ -38,6 +38,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.rugby-info{
+	background-color: #141414;
+	padding: 5% 0 5% 0;
+}
 
 .rugby-icon-equipment:before {
   content: "\61";
@@ -45,15 +49,18 @@
 .rugby-icon-field:before {
   content: "\62";
 }
+.rugby-icon-ranking:before {
+  content: "\65";
+}
 .rugby-icon-rules:before {
   content: "\63";
 }
-.rugby-icon-ranking:before {
-  content: "\64";
+.rugby-icon-history:before {
+	content: "\64";
 }
 
-.rugby-icon-ranking-black:before {
-  content: "\65";
+.rugby-icon-world:before {
+  content: "\66";
 }
 
 /* General grid styles */

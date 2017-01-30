@@ -79,6 +79,7 @@ html,
   padding: .625em 1%;
   cursor: pointer;
   border: 1px solid #FFE918;
+  background: rgba(128, 128, 128, 0.4);
   -webkit-transition-duration: .35s;
   transition-duration: .35s;
   -webkit-transform-origin: 0 100%;
@@ -151,22 +152,22 @@ html,
 }
 
 .seq .seq-step2 {
-  background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-image: url("../../../../images/page/home/main/slider-top/top-home-img2.svg");
   background-repeat: no-repeat;
 }
 
 .seq .seq-step3 {
-  background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-image: url("../../../../images/page/home/main/slider-top/top-home-img3.svg");
   background-repeat: no-repeat;
 }
 
 .seq .seq-step4 {
-  background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-image: url("../../../../images/page/home/main/slider-top/top-home-img4.svg");
   background-repeat: no-repeat;
 }
 
 .seq .seq-step5 {
-  background-image: url("../../../../images/page/home/main/slider-top/top-home-img.svg");
+  background-image: url("../../../../images/page/home/main/slider-top/top-home-img5.svg");
   background-repeat: no-repeat;
 }
 

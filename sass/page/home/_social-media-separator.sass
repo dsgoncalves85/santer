@@ -1,6 +1,6 @@
 .social-media-separator
-	max-height: 400px
-	padding: 20px 0 20px 0
+	max-height: 800px
+	padding: 1% 0 1% 0
 	text-align: center
 	background:
 		color: $yellow
@@ -11,23 +11,42 @@
 	.social-text
 		width: 100%
 		h2
-			font-size: 22px
+			font-size: 30px
 			margin: auto
-			padding-top: 50px
-			height: 200px
+			padding-top: 7%
 			width: 450px
 
 	.social-icons
 		ul
 			li
 				display: inline-block
-				padding: 0 7px 0 7px
+				padding: 7% 1% 0 1%
+
+@media (min-width: $mobile) and (max-width: $tablet)
+	.social-media-separator
+		max-height: 600px
+
+		.social-globe
+			img
+				width: 120px
+				height: 120px
+
+		.social-text
+			width: 100%
+			h2
+				font-size: 22px
+		
+		.social-icons
+
+			ul
+				li
+					img
+						width: 50px
+						height: 50px
 
 @media (max-width: $mobile)
 	.social-media-separator
 		max-height: 300px
-		padding: 10px 0 10px 0
-		text-align: center
 
 		.social-globe
 			img
@@ -38,17 +57,14 @@
 			width: 100%
 			h2
 				font-size: 18px
-				margin: auto
-				padding-top: 30px
-				height: 150px
 				width: 300px
 		.social-icons
 
 			ul
 				li
-					display: inline-block
-					padding: 0 4px 0 4px
 					img
 						width: 30px
 						height: 30px
+
+
 
