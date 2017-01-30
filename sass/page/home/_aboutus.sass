@@ -55,8 +55,8 @@
 
 	.more-about
 		position: relative
-		min-height: 145px
-		margin-top: 4%
+		min-height: 130px
+		margin-top: 5%
 
 		.button-moreabout
 			position: absolute
@@ -67,13 +67,23 @@
 			text-align: center
 			width: 270px
 			height: 50px
-			background:
-				color: $black
+			background-color: $black
 
-			p,i
-				display: inline-block
+			a
 				color: $white
+				display: inline-block
 				padding-left: 20px
+
+				i
+					padding-left: 10px
+
+		.button-moreabout:hover
+			background:
+				color: $white
+			border: 2px solid $black
+			
+			a:hover
+				color: $black
 
 	@media (max-width: $mobile)
 		.main-title

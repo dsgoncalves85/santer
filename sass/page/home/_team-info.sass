@@ -1,8 +1,90 @@
+
+@font-face
+	font-family: 'santer-font'
+	src:url('../../../fonts/icomoon/santer-font.eot?pvm5gj')
+	src:url('../../../fonts/icomoon/santer-font.eot?#iefixpvm5gj') format('embedded-opentype')
+		url('../../../fonts/icomoon/santer-font.woff?pvm5gj') format('woff')
+		url('../../../fonts/icomoon/santer-font.ttf?pvm5gj') format('truetype')
+		url('../../../fonts/icomoon/santer-font.svg?pvm5gj#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+
 .team-info
-	padding: 30px 0 30px 0
+	padding: 30px 0 0 0
 	background:
 		color: $yellow
 	color: $white
+
+	.team-info-footer
+		position: relative
+		background-color: $white
+		border-top: 2px solid $dark-gray
+		width: 100%
+		height: 100px
+
+		.main-social
+			margin: 30px 0 0 30px
+			ul
+				li
+					display: inline-block
+		
+		.family-button
+			background: $white
+			padding: 10px 10px 10px 10px
+			border: 2px solid $black
+			position: absolute
+			top: -100%
+			left: 41%
+
+			.rugby-icon-family:before 
+		 			content: "\68"
+
+			a
+				color: $black
+				font-family: santer-font
+				font-size: 40px	
+
+				span
+					font-family: $font-family
+					font-size: 40px
+					margin-left: 20px
+		
+		.family-button:hover
+			background: $black
+			color: $white
+			border: 2px solid $white
+			a:hover
+				color: $white
+
+
+					
+@media (min-width: $mobile) and (max-width: $tablet)
+	.team-info
+
+		.team-info-footer
+			text-align: center
+
+			.family-button
+				left: 35%
+
+				a
+					font-size: 30px
+					span
+						font-size: 30px
+						margin-left: 10px	
+
+@media (max-width: $mobile)
+	.team-info
+
+		.team-info-footer
+			text-align: center
+
+			.family-button
+				left: 46%
+
+				a
+					span
+						display: none
 
 
 

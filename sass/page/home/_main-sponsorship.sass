@@ -1,18 +1,57 @@
+@font-face
+	font-family: 'icomoon'
+	src:url('../../../fonts/icomoon/icomoon.eot?pvm5gj')
+	src:url('../../../fonts/icomoon/icomoon.eot?#iefixpvm5gj') format('embedded-opentype')
+		url('../../../fonts/icomoon/icomoon.woff?pvm5gj') format('woff')
+		url('../../../fonts/icomoon/icomoon.ttf?pvm5gj') format('truetype')
+		url('../../../fonts/icomoon/icomoon.svg?pvm5gj#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: 'santer-font'
+	src:url('../../../fonts/icomoon/santer-font.eot?pvm5gj')
+	src:url('../../../fonts/icomoon/santer-font.eot?#iefixpvm5gj') format('embedded-opentype')
+		url('../../../fonts/icomoon/santer-font.woff?pvm5gj') format('woff')
+		url('../../../fonts/icomoon/santer-font.ttf?pvm5gj') format('truetype')
+		url('../../../fonts/icomoon/santer-font.svg?pvm5gj#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+
 .main-sponsorship
 	background-color: $white
 
 	.sponsorship-title
-		border-bottom: 7px solid $dark-gray
+		position: relative
+		background-color: $dark-gray
+		border-bottom: 5px solid $yellow
 		text-align: center
 		padding: 1% 0 1% 0
 		h3
+			color: $white
 			font-weight: bold
 			font-size: 90px
 
+		.home-button
+			position: absolute
+			top: 30%
+			right: 5%
+			width: 60px
+			height: 60px
+			border-radius: 50%
+			border: 5px solid $white
+			padding: 7px 7px 7px 7px
+
+			.icon-home3:before
+				font-family: icomoon
+				font-size: 30px
+				font-style: normal
+				color: $white
+				content: "\e902"
 	.container
 		.main-sponsors-container
 			text-align: center
-			margin: 5% 0 10% 0
+			margin: 3% 0 3% 0
 
 			ul
 				li	
@@ -24,4 +63,32 @@
 							size: cover
 							position: center
 
-				
+	.main-sponsorship-footer		
+		background-color: $dark-gray
+		border-top: 5px solid $yellow
+		width: 100%
+		min-height: 100px
+		position: relative
+
+		.team-button
+			position: absolute
+			right: 0
+			bottom: 0
+			padding: 10px 20px 10px 20px
+			background-color: $white
+			a
+				font-size: 30px
+				color: $black
+		
+			span
+				font-family: santer-font
+				margin-right: 10px
+			.rugby-icon-helmet:before 
+				content: "\67"
+ 				
+.team-button:hover
+	background-color: $black!important
+	border: 2px solid $white
+	a:hover
+		color: $white
+
