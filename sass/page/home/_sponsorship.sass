@@ -9,7 +9,7 @@
 		ul
 			li	
 				display: inline-block
-				margin: 0 20px 0 20px
+				margin: 0 10px 0 10px
 				img
 					width: 150px
 					height: 150px
@@ -18,4 +18,30 @@
 						size: cover
 						position: center
 
-				
+@media(max-width: $mobile)
+	.sponsorship
+		min-height: 100px
+		.sponsors-container
+			margin: 10px 0 10px 0
+
+			ul
+				li	
+					margin: 0 5px 0 5px
+					img
+						width: 90px
+						height: 90px
+							
+@media(min-width: $mobile) and (max-width: $tablet)
+	.sponsorship
+		min-height: 160px
+		.sponsors-container
+			margin: 10px 0 10px 0
+
+			ul
+				li	
+					margin: 0 10px 0 0
+					img
+						width: 120px
+						height: 120px
+							
+								
