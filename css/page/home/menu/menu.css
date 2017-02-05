@@ -99,7 +99,7 @@
 @media screen and (max-width: 43em) { 
 
 	.cbp-hrmenu {
-		font-size: 110%;
+		font-size: 130%;
 		border: none;
 	}
 
@@ -135,6 +135,11 @@
 }
 
 @media screen and (max-width: 36em) { 
+	
+	.cbp-hrmenu {
+		font-size: 90%;
+	}
+
 	.cbp-hrmenu .cbp-hrsub-inner > div {
 		width: 100%;
 		float: none;
