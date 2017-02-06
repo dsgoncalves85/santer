@@ -198,7 +198,7 @@ html,
   margin-left: -47%;
   padding: 0 2%;
   line-height: 1.2;
-  background: white;
+  background: rgba(255,255,255, 0.9);
   text-align: center;
 }
 

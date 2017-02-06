@@ -120,9 +120,9 @@
 
 .slideshow li {
 	width: 850px;
-	height: 830px;
+	height: 730px;
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	left: 46%;
 	margin: -280px 0 0 -330px;
 	visibility: hidden;
@@ -162,7 +162,6 @@
 
 .slideshow figure img {
 	border: 2px solid #ffe918;
-	margin-top: 20px;
 }
 
 .slideshow figcaption {
@@ -171,15 +170,15 @@
 
 .slideshow figcaption h3 {
 	color: #ffe918;
-	font-weight: 300;
-	font-size: 200%;
+	font-weight: 200;
+	font-size: 140%;
 	border-bottom: 2px solid #ffe918;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .slideshow figcaption p {
-	font-size: 120%;
-	margin-bottom: 10px;
+	font-size: 80%;
+	margin-bottom: 7px;
 }
 
 .slideshow figcaption p.conquest {

@@ -40,7 +40,7 @@
 
 .rugby-info{
 	background-color: #141414;
-	padding: 5% 0 5% 0;
+	padding: 1% 0 1% 0;
 }
 
 .rugby-icon-equipment:before {
@@ -85,7 +85,7 @@
 .cbp-ig-grid li {
 	width: 33%;
 	float: left;
-	height: 420px;
+	height: 400px;
 	text-align: center;
 	border-top: 1px solid #ddd;
 }
@@ -121,7 +121,7 @@
 
 .cbp-ig-icon:before {
 	font-family: 'santer-font';
-	font-size: 14em;
+	font-size: 11em;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -159,7 +159,7 @@
 .cbp-ig-grid .cbp-ig-title {
 	margin: 20px 0 10px 0;
 	padding: 20px 0 0 0;
-	font-size: 2em;
+	font-size: 1.6em;
 	position: relative;
 	-webkit-transition: -webkit-transform 0.2s;
 	-moz-transition: -moz-transform 0.2s;
@@ -183,7 +183,7 @@
 .cbp-ig-grid .cbp-ig-category {
 	text-transform: uppercase;
 	display: inline-block;
-	font-size: 1em;
+	font-size: 0.8em;
 	letter-spacing: 1px;
 	color: #000;
 	-webkit-transform: translateY(10px);

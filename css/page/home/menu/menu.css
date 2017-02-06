@@ -1,6 +1,6 @@
 .cbp-hrmenu {
 	width: 100%;
-	margin-top: 1em;
+	margin-top: 0.8em;
 	border-bottom: 4px solid #FFE918;
 	text-align: center;
 }
@@ -18,7 +18,7 @@
 	width: 90%;
 	max-width: 70em;
 	margin: 0 auto;
-	padding: 0 1.875em;
+	padding: 0 1.5em;
 }
 
 .cbp-hrmenu > ul > li {
@@ -27,7 +27,7 @@
 
 .cbp-hrmenu > ul > li > a {
 	font-weight: 600;
-	padding: 1em 2em;
+	padding: 0.6em 1.5em;
 	color: #D3D3D3;
 	display: inline-block;
 }
@@ -75,14 +75,14 @@
 }
 
 .cbp-hrmenu .cbp-hrsub-inner > div a {
-	line-height: 2em;
+	line-height: 1.8em;
 }
 
 .cbp-hrsub h4 {
 	color: #464646;
-	padding: 2em 0 0.6em;
+	padding: 1.2em 0 0.5em;
 	margin: 0;
-	font-size: 180%;
+	font-size: 150%;
 	font-weight: 300;
 }
 
@@ -111,7 +111,7 @@
 
 	.cbp-hrmenu .cbp-hrsub-inner {
 		padding: 0 2em;
-		font-size: 80%;
+		font-size: 100%;
 	}
 
 	.cbp-hrmenu > ul > li {
@@ -137,7 +137,7 @@
 @media screen and (max-width: 36em) { 
 	
 	.cbp-hrmenu {
-		font-size: 50%;
+		font-size: 100%;
 	}
 
 	.cbp-hrmenu .cbp-hrsub-inner > div {
