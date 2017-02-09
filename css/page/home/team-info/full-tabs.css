@@ -148,7 +148,9 @@
 .icon-table2:before {
   content: "\ea71";
 }
-
+.icon-circle-up:before {
+  content: "\ea41";
+}
 /* Content */
 .content section {
 	font-size: 1.2em !important;

@@ -15,18 +15,23 @@
 	bottom: 0px	
 	height: 400px
 	position: relative
-
+	border-top: 3px solid $yellow
 	background:
 		color: $white
 
 	.footer-button-top
 		position: absolute
 		left: 49%
-		top: -25px
+		top: -10%
 		margin: auto
-		width: 50px
-		height: 50px
 		z-index: 2
+		border-radius: 50%
+		background-color: $yellow
+		a
+			span
+				font-family: icomoon
+				font-size: 70px
+				color: $black
 
 	.footer-text
 		padding-top: 120px
@@ -54,6 +59,12 @@
 	.copyright
 		padding-top: 20px
 
+	.footer-button-top:hover
+		background-color: $black
+		a
+			span 
+				color: $yellow	
+
 @media (max-width: $mobile)
 	.footer-container
 		height: 200px
@@ -71,7 +82,7 @@
 			padding-top: 40px
 			
 			span
-				font-size: 18px;
+				font-size: 18px
 				
 			h2
 				font-size: 14px
