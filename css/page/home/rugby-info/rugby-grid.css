@@ -1,0 +1,433 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "santer-font";
+  src:url("../../../../fonts/icomoon/santer-font.eot");
+  src:url("../../../../fonts/icomoon/santer-font.eot?#iefix") format("embedded-opentype"),
+    url("../../../../fonts/icomoon/santer-font.woff") format("woff"),
+    url("../../../../fonts/icomoon/santer-font.ttf") format("truetype"),
+    url("../../../../fonts/icomoon/santer-font.svg#santer-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "santer-font" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="rugby-icon"]:before,
+[class*="rugby-icon"]:before {
+  font-family: "santer-font" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rugby-info{
+	background-color: #141414;
+	padding: 1% 0 1% 0;
+}
+
+.rugby-icon-equipment:before {
+  content: "\61";
+}
+.rugby-icon-field:before {
+  content: "\62";
+}
+.rugby-icon-ranking:before {
+  content: "\65";
+}
+.rugby-icon-rules:before {
+  content: "\63";
+}
+.rugby-icon-history:before {
+	content: "\64";
+}
+
+.rugby-icon-world:before {
+  content: "\66";
+}
+
+/* General grid styles */
+.cbp-ig-grid {
+	list-style: none;
+	padding: 0 0 50px 0;
+	margin: 0;
+}
+
+/* Clear floats */
+.cbp-ig-grid:before, 
+.cbp-ig-grid:after { 
+	content: " "; 
+	display: table; 
+}
+
+.cbp-ig-grid:after { 
+	clear: both; 
+}
+
+/* grid item */
+.cbp-ig-grid li {
+	width: 33%;
+	float: left;
+	height: 400px;
+	text-align: center;
+	border-top: 1px solid #ddd;
+}
+
+/* we are using a combination of borders and box shadows to control the grid lines */
+.cbp-ig-grid li:nth-child(-n+3){
+	border-top: none;
+}
+
+.cbp-ig-grid li:nth-child(3n-1),
+.cbp-ig-grid li:nth-child(3n-2) {
+	box-shadow: 1px 0 0 #ddd;
+}
+
+/* anchor style */
+.cbp-ig-grid li > a {
+	display: block;
+	height: 100%;
+	color: #FFE918;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+	transition: background 0.2s;
+}
+
+/* the icon with pseudo class for icon font */
+.cbp-ig-icon {
+	padding: 30px 0 0 0;
+	display: block;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.cbp-ig-icon:before {
+	font-family: 'santer-font';
+	font-size: 11em;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.cbp-ig-icon-shoe:before {
+	content: "\e000";
+}
+
+.cbp-ig-icon-rules:before {
+	content: "\e900";
+}
+
+.cbp-ig-icon-armor:before {
+	content: "\e027";
+}
+
+.cbp-ig-icon-whippy:before {
+	content: "\e003";
+}
+
+.cbp-ig-icon-spectacles:before {
+	content: "\e004";
+}
+
+.cbp-ig-icon-doumbek:before {
+	content: "\e007";
+}
+
+/* title element */
+.cbp-ig-grid .cbp-ig-title {
+	margin: 20px 0 10px 0;
+	padding: 20px 0 0 0;
+	font-size: 1.6em;
+	position: relative;
+	-webkit-transition: -webkit-transform 0.2s;
+	-moz-transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.cbp-ig-grid .cbp-ig-title:before {
+	content: '';
+	position: absolute;
+	background: #FFE918;
+	width: 160px;
+	height: 6px;
+	top: 0px;
+	left: 50%;
+	margin: -10px 0 0 -80px;
+	-webkit-transition: margin-top 0.2s; /* top or translate does not seem to work in Firefox */
+	-moz-transition: margin-top 0.2s;
+	transition: margin-top 0.2s;
+}
+
+.cbp-ig-grid .cbp-ig-category {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 0.8em;
+	letter-spacing: 1px;
+	color: #000;
+	-webkit-transform: translateY(10px);
+	-moz-transform: -moz-translateY(10px);
+	-ms-transform: -ms-translateY(10px);
+	transform: translateY(10px);
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	-webkit-transition: transform 0.3s, opacity 0.2s;
+}
+
+.cbp-ig-grid li:hover .cbp-ig-category,
+.touch .cbp-ig-grid li .cbp-ig-category {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+/* Hover styles */
+
+.cbp-ig-grid li > a:hover {
+	background: #FFE918;
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-icon {
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-icon:before,
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+	color: #000;
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-title {
+	-webkit-transform: translateY(-30px);
+	-moz-transform: translateY(-30px);
+	-ms-transform: translateY(-30px);
+	transform: translateY(-30px);
+}
+
+.cbp-ig-grid li > a:hover .cbp-ig-title:before {
+	background: #000;
+	margin-top: 80px;
+}
+
+
+/*LIGHTBOX*/
+
+
+#mask {
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:fixed;
+  left:0;
+  top:0;
+  display:none;
+  z-index:9999;
+  width:90%; 
+  height:90%;
+  padding:10px 0px;
+  background-color:rgba(255,233,24,0.95);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a.close:before {
+	content: "\ea0f";
+}
+
+.icon:before,
+.icon:after {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#boxes .window .close {
+	position:absolute;
+	top:0px;
+	right:-40px;
+	width:30px;
+	height:30px;
+	text-align: center;
+	padding-top: 7px;
+	background-color:#FFE918;
+	color:#000;
+	font-size:16px;
+	opacity:0.75;	
+}
+
+#boxes .window .close:hover {	
+	opacity:0.99;
+	cursor:pointer;
+}
+
+.info-title{
+	color: #FFF;
+	font-size: 45px;
+	padding: 0.8% 0 0 0!important;
+}
+
+.info-header{
+	text-align: left;
+	background-color: #000;
+	height: 65px;
+	margin-top: 20px;
+}
+
+.small-icon{
+	color: #FFF;
+	font-size: 60px;
+	margin: 0.2% 1% 2% 2%;
+	float: left;
+}
+
+.info-body{
+	height: 100%;
+	padding: 2% 2% 2% 2%;
+	margin-bottom: 40px;
+}
+
+.info-body .history-text p{
+	font-size: 16px;
+	line-height: 25px;
+	margin-top: 1%;
+}
+
+.history-image{
+	content: url("/images/page/home/main/rugby-info/history1.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover;
+	background-position: center;
+	border: 6px solid black;
+}
+
+.photo-owner{
+	font-size: 10px!important;
+}
+
+.info-image{
+	width: 364px;
+	float: left;
+	margin: 2% 4% 2% 1%;
+}
+
+@media screen and (max-width: 62.75em) {
+	.cbp-ig-grid li {
+		width: 50%;
+	}
+
+	/* reset the grid lines */
+	.cbp-ig-grid li:nth-child(-n+3){
+		border-top: 1px solid #ddd;
+	}
+
+	.cbp-ig-grid li:nth-child(3n-1),
+	.cbp-ig-grid li:nth-child(3n-2) {
+		box-shadow: none;
+	}
+
+	.cbp-ig-grid li:nth-child(-n+2){
+		border-top: none;
+	}
+
+	.cbp-ig-grid li:nth-child(2n-1) {
+		box-shadow: 1px 0 0 #ddd;
+	}
+}
+
+@media screen and (max-width: 41.6em) { 
+	.cbp-ig-grid li {
+		width: 100%;
+	}
+
+	.cbp-ig-grid li:nth-child(-n+2){
+		border-top: 1px solid #ddd;
+	}
+
+	.cbp-ig-grid li:nth-child(2n-1) {
+		box-shadow: none
+	}
+
+	.cbp-ig-grid li:first-child {
+		border-top: none;
+	}
+
+	.info-title{
+		font-size: 25px;
+		padding: 2% 0 0 0!important;
+	}
+
+	.info-header{
+		height: 35px;
+		margin-top: 10px;
+	}
+
+	.small-icon{
+		font-size: 30px;
+		margin-right: 2%;
+		padding: 1% 0 0 0!important;
+	}
+
+	.info-body .history-text p{
+		font-size: 16px;
+		line-height: 20px;
+		margin: 1% 1% 1% 1%;
+	}
+
+	.history-image{
+		width: 270px!important;
+		border: 3px solid black;
+	}
+
+	.info-image{
+		margin: 10px 10px 10px 10px;
+	}
+}
+
+@media screen and (max-width: 25em) { 
+	.cbp-ig-grid {
+		font-size: 80%;
+	}
+
+	.cbp-ig-grid .cbp-ig-category {
+		margin-top: 20px;
+	}
+
+}
