@@ -256,7 +256,7 @@
   z-index:9999;
   width:90%; 
   height:90%;
-  padding:10px 0px;
+  padding:10px 0px 40px 0px;
   background-color:rgba(255,233,24,0.95);
   overflow-y: scroll;
   overflow-x: hidden;
@@ -301,7 +301,7 @@ a.close:before {
 .info-title{
 	color: #FFF;
 	font-size: 45px;
-	padding: 0.8% 0 0 0!important;
+	padding: 0.7% 0 0 0!important;
 }
 
 .info-header{
@@ -321,17 +321,53 @@ a.close:before {
 .info-body{
 	height: 100%;
 	padding: 2% 2% 2% 2%;
-	margin-bottom: 40px;
 }
 
-.info-body .history-text p{
+.info-body .info-text p{
 	font-size: 16px;
 	line-height: 25px;
 	margin-top: 1%;
 }
 
+.topics{
+	text-indent: 50px;
+	line-height: 30px!important;
+}
+
+.main-subtitle{
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	background-color:rgba(255,255,255,0.35);
+}
+
+.subtitle{
+	font-size: 24px;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+
 .history-image{
 	content: url("/images/page/home/main/rugby-info/history1.jpg");
+}
+
+.rules1-image{
+	content: url("/images/page/home/main/rugby-info/rules1.png");
+}
+
+.rules2-image{
+	content: url("/images/page/home/main/rugby-info/rules2.png");
+}
+
+.rules3-image{
+	content: url("/images/page/home/main/rugby-info/rules3.png");
+}
+
+.info-image{
 	background-repeat: no-repeat; 
 	background-size: cover;
 	background-position: center;
@@ -342,10 +378,20 @@ a.close:before {
 	font-size: 10px!important;
 }
 
-.info-image{
-	width: 364px;
+.div-info-image{
 	float: left;
-	margin: 2% 4% 2% 1%;
+	margin: 2% 4% 1% 1%;
+}
+
+.div-info-image-right{
+	float: right;
+	margin: 2% 1% 1% 4%;
+}
+
+.div-info-image-center{
+	width: 100%;
+	text-align: center;
+	margin: 2% 0% 0% 0%;
 }
 
 @media screen and (max-width: 62.75em) {
@@ -405,19 +451,51 @@ a.close:before {
 		padding: 1% 0 0 0!important;
 	}
 
-	.info-body .history-text p{
+	.info-body .info-text p{
 		font-size: 16px;
 		line-height: 20px;
 		margin: 1% 1% 1% 1%;
 	}
 
-	.history-image{
-		width: 270px!important;
-		border: 3px solid black;
+	.topics{
+		text-indent: 20px;
+		font-size: 14px;
+		line-height: 15px;
+	}
+
+	.main-subtitle{
+		font-size: 20px;
+		margin-bottom: 2%;
+		margin-top: 2%;
+	}
+
+	.subtitle{
+		font-size: 18px;
+		margin-bottom: 3%;
+		margin-top: 3%;
 	}
 
 	.info-image{
-		margin: 10px 10px 10px 10px;
+		max-width: 270px!important;
+		border: 3px solid black;
+	}
+
+	.div-info-image{
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin: 20px 20px 0px 0px!important;
+	}
+
+	.div-info-image-center{
+		margin: 20px 20px 0px 0px!important;
+	}
+
+	.div-info-image-right{
+		float: none;
+		text-align: center;
+		width: 100%;
+		margin: 20px 20px 0px 0px!important;
 	}
 }
 
