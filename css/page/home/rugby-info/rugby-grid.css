@@ -391,6 +391,15 @@ a.close:before {
 	max-width: 100%;
 }
 
+
+.ranking1-image{
+	content: url("/images/page/home/main/rugby-info/ranking1.jpg");
+}
+
+.ranking2-image{
+	content: url("/images/page/home/main/rugby-info/ranking2.jpg");
+}
+
 .info-image{
 	background-repeat: no-repeat; 
 	background-size: cover;
@@ -425,6 +434,52 @@ a.close:before {
 	margin: 2% 0% 0% 0%;
 }
 
+.div-ranking{
+	margin: 0 auto;
+	border: 1px solid black;
+	text-align: center;
+}
+
+.div-ranking-list{
+	display: inline-block;
+	margin: 2% 2% 2% 2%;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.ranking{
+	font-size: 20px!important;
+	line-height: 40px!important;
+}
+
+.position{
+	color: #FFF;
+	font-weight: bolder;
+}
+
+.brazil{
+	color: #3C9E51;
+	font-weight: bolder;	
+}
+
+.rugby-icon-helmet{
+	margin-left: 10px;
+}
+				
+.rugby-icon-helmet:before {
+	content: "\67";
+}
+
+.source{
+	text-align: right;
+	font-size: 15px;
+	margin: 5px 5px 5px 5px;
+}
+
+.santer{
+	color: #FFF;
+	font-weight: bolder;
+}
 
 @media screen and (max-width: 62.75em) {
 	.cbp-ig-grid li {
@@ -528,6 +583,19 @@ a.close:before {
 		text-align: center;
 		width: 100%;
 		margin: 20px 20px 0px 0px!important;
+	}
+
+	.div-ranking-list{
+		text-align: center;
+		width: 100%;
+	}
+
+	.ranking{
+		font-size: 18px!important;
+	}
+
+	.source{
+		font-size: 12px;
 	}
 }
 

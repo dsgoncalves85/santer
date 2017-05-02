@@ -1,4 +1,97 @@
+@font-face
+	font-family: 'icomoon'
+	src:url('../../../fonts/icomoon/icomoon.eot?pvm5gj')
+	src:url('../../../fonts/icomoon/icomoon.eot?#iefixpvm5gj') format('embedded-opentype')
+		url('../../../fonts/icomoon/icomoon.woff?pvm5gj') format('woff')
+		url('../../../fonts/icomoon/icomoon.ttf?pvm5gj') format('truetype')
+		url('../../../fonts/icomoon/icomoon.svg?pvm5gj#icomoon') format('svg')
+	font-weight: normal
+	font-style: normal
+
 .contactus
 	width: 100%
 	background-color: $yellow
 	min-height: 600px	
+
+	.main-social
+			text-align: right
+			padding: 10px 10px 10px 0
+			ul
+				li
+					display: inline-block
+
+	.main-title
+		height: 90px
+		padding-top: 15px
+		text-align: center
+		background:
+			color: $dark-gray
+		h1
+			color: $white
+			font-size: 50px
+
+	.contact-main
+		padding: 2% 15% 2% 15%
+
+		.contact-image
+			display: inline-block
+
+		.contact-info
+			vertical-align: top
+			width: 70%
+			display: inline-block
+			
+			.contact-text
+				padding: 2% 2% 2% 2%
+				border-bottom: 3px solid 
+
+				p
+					font-size: 45px
+
+			.contact-details
+				padding-top: 10%
+				text-align: right
+
+				h1
+					padding-right: 70px
+					font-size: 40px
+					line-height: 100px
+
+					.contact-icon
+						font-family: icomoon
+						margin-right: 20px
+
+				p
+					padding-right: 50px
+					font-size: 30px
+
+@media (max-width: $mobile)
+	.contactus
+		.main-title
+			padding-top: 15px
+			height: 80px
+			h1
+				font-size: 40px
+
+		.main-text-container
+			.main-text
+				padding-top: 30px
+				height: 150px
+				width: 270px
+				font-size: 16px
+
+		.main-social
+			text-align: center
+						
+		.contact-main
+			text-align: center!important
+
+			.contact-image	
+				img
+					width: 200px
+					height: 280px
+
+			.contact-info
+				.contact-text
+					font-size: 20px
+				
